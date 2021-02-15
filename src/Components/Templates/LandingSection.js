@@ -1,25 +1,14 @@
 import React from "react";
-import img from "../../Images/Worlds.svg";
+import styles from "./LandingSection.module.css";
 import ApearAnimation from "../../Components/Organisms/Animations/Apear";
+import WorldSVG from "../Atoms/ReactSVG/WorldSVG";
 
 const LandingSection = () => {
   return (
     <ApearAnimation delayTime={500} duration={2000}>
-      <img
-        style={{ height: "100vh", borderRadius: "30px" }}
-        src={img}
-        alt="hi"
-      ></img>
+      <WorldSVG />
       <ApearAnimation delayTime={1500} duration={2000}>
-        <h1
-          style={{
-            fontWeight: "400",
-            position: "absolute",
-            top: "20px",
-            left: "150px",
-            width: "40%",
-          }}
-        >
+        <h1 className={styles.title} >
           Welcome to my universe
         </h1>
       </ApearAnimation>
