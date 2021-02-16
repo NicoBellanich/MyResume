@@ -1,3 +1,17 @@
 .image {
-    width:50vw;
+  width: 50vw;
+}
+
+.satelite {
+  fill: black;
+  opacity: 0.95;
+  /* animation: moveSatelite 1s infinite alternate; */
+  animation: moveSatelite 3s forwards;
+}
+
+@keyframes moveSatelite {
+  to {
+   /* transform: rotate(20deg) translateY(10px) ; */
+   transform: rotate(20deg) translateY(26px) ;
+  }
 }

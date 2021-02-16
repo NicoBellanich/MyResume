@@ -26,7 +26,7 @@ const WorldSVG = () => {
           d="M189.5 116.5C189.5 171.787 149.822 216.5 101 216.5C52.1782 216.5 12.5 171.787 12.5 116.5C12.5 61.2127 52.1782 16.5 101 16.5C149.822 16.5 189.5 61.2127 189.5 116.5Z"
           stroke="black"
         />
-        <circle id="satelelite" cx="133.5" cy="60.5" r="12.5" fill="#0D0D0D" />
+        <circle className={styles.satelite}id="satelelite" cx="100.5" cy="100.5" r="12.5" fill="#0D0D0D" />
       </g>
     </svg>
   );
