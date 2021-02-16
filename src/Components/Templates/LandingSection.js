@@ -17,10 +17,9 @@ const LandingSection = () => {
       </div>
       <div className={styles.rightSide}>
         <Parallax >
-          <WorldSVG />
-          {/* <ApearAnimation delayTime={500} duration={2000}>
+          <ApearAnimation delayTime={0} duration={2000}>
             <WorldSVG />
-          </ApearAnimation> */}
+          </ApearAnimation>
         </Parallax>
       </div>
     </div>
