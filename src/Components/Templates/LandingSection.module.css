@@ -9,6 +9,9 @@
 
 .leftSide {
   min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .rightSide {
