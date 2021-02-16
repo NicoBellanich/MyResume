@@ -4,7 +4,7 @@ import styles from "./AboutMeSection.module.css";
 const AboutMeSection = () => {
   return (
     <div className={styles.container}>
-      <h1>hello</h1>
+      <h1 className={styles.title}>This is where I studied</h1>
     </div>
   );
 };
