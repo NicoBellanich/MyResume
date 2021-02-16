@@ -8,7 +8,7 @@ const LandingSection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSide}>
-        <Parallax speed={-2}>
+        <Parallax speed={-5}>
           <ApearAnimation delayTime={1500} duration={2000}>
             <h1 className={styles.title}>Welcome to my universe</h1>
             <p className={styles.paragraphs}>{textsLandingSection}</p>
@@ -16,7 +16,7 @@ const LandingSection = () => {
         </Parallax>
       </div>
       <div className={styles.rightSide}>
-        <Parallax speed={-2}>
+        <Parallax >
           <ApearAnimation delayTime={500} duration={2000}>
             <WorldSVG />
           </ApearAnimation>
