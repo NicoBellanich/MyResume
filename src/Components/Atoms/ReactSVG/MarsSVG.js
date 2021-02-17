@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./Planets.module.css";
 
-const MarsSVG = () => {
+const MarsSVG = ({ clicked, changeClicked }) => {
   return (
     <svg
-      className={styles.mars}
+      onClick={changeClicked}
+      className={clicked ? styles.marsClicked : styles.mars}
       viewBox="0 0 50 57"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

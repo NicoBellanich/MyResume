@@ -1,13 +1,11 @@
 .mars {
   width: 10vw;
+  animation: reverseRotatePlanet 2s forwards;
 }
 
-.mars:hover {
-  animation: expandPlanet 2s forwards;
-}
-
-.mars:hover::before {
-  animation: contractPlanet 2s forwards;
+.marsClicked {
+  width: 10vw;
+  animation: rotatePlanet 2s forwards;
 }
 
 .neptun {
@@ -15,7 +13,7 @@
 }
 
 .neptun:hover {
-  animation: expandPlanet 2s forwards;
+  animation: rotatePlanet 2s forwards;
 }
 
 .saturn {
@@ -23,13 +21,20 @@
 }
 
 .saturn:hover {
-  animation: expandPlanet 2s forwards;
+  animation: rotatePlanet 2s forwards;
 }
 
-
-
-@keyframes expandPlanet {
-    to {
-      transform: rotate(150deg);
-    }
+@keyframes rotatePlanet {
+  to {
+    transform: rotate(150deg);
   }
+}
+
+@keyframes reverseRotatePlanet {
+  from {
+    transform: rotate(150deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
