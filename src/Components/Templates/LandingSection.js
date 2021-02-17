@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./LandingSection.module.css";
 import ApearAnimation from "../../Components/Organisms/Animations/Apear";
 import WorldSVG from "../Atoms/ReactSVG/WorldSVG";
@@ -6,7 +6,13 @@ import LittleWorldsSVG from "../Atoms/ReactSVG/LittleWorldsSVG";
 import textsLandingSection from "../Atoms/Texts/TextsLandingSection";
 import Parallax from "react-rellax";
 import LandingSateliteSVG from "../Atoms/ReactSVG/LandingSateliteSVG";
+import ContactInfoSection from "./ContactInfoSection";
+
 const LandingSection = () => {
+  const [sateliteClicked, setSateliteClicked] = useState(false);
+  const handleSateliteClick = () => {
+    setSateliteClicked((p) => !p);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.leftSide}>
@@ -14,10 +20,11 @@ const LandingSection = () => {
           <ApearAnimation delayTime={1500} duration={2000}>
             <h1 className={styles.title}>Welcome to my universe</h1>
             <p className={styles.paragraphs}>{textsLandingSection}</p>
-            <div style={{margin:"0"}} onClick={()=>alert("hi")}>
+            <div style={{ margin: "0" }} onClick={handleSateliteClick}>
               <LandingSateliteSVG />
             </div>
           </ApearAnimation>
+          {sateliteClicked && <ContactInfoSection />}
         </Parallax>
         <Parallax speed={-1}>
           <ApearAnimation delayTime={1500} duration={2000}>
