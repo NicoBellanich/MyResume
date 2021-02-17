@@ -1,10 +1,9 @@
 import React from "react";
-
+import styles from "./LandingSateliteSVG.module.css";
 const LandingSateliteSVG = () => {
   return (
     <svg
-      width="26"
-      height="28"
+      className={styles.satelite}
       viewBox="0 0 26 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -36,16 +35,19 @@ const LandingSateliteSVG = () => {
           id="firstWave"
           d="M18.1485 16.7234C17.4551 18.587 16.8789 19.5233 15 20.7001"
           stroke="black"
+          className={styles.firstWave}
         />
         <path
           id="secondWave"
           d="M20.8631 15.9292C20.0635 19.6373 19.0932 21.3646 15.7942 23.4147"
           stroke="black"
+          className={styles.secondWave}
         />
         <path
           id="thirdWave"
           d="M24.0789 15.4093C22.6753 20.6743 21.4038 23.27 17.0895 26.4036"
           stroke="black"
+          className={styles.thirdWave}
         />
         <circle
           id="Ellipse 15"

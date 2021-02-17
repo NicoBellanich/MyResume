@@ -1,0 +1,32 @@
+.satelite {
+  width: 4vw;
+  animation: moveSatelite 8s infinite alternate;
+
+}
+
+.firstWave {
+  animation: fadeIn 2s 0s infinite alternate;
+  opacity: 0;
+}
+
+.secondWave {
+  animation: fadeIn 2s 1s infinite alternate;
+  opacity: 0;
+}
+
+.thirdWave {
+  animation: fadeIn 2s 2s infinite alternate;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveSatelite {
+    to {
+     transform: rotate(-20deg) translateY(30vh) ;
+    }
+  }

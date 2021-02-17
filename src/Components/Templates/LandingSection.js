@@ -5,6 +5,7 @@ import WorldSVG from "../Atoms/ReactSVG/WorldSVG";
 import LittleWorldsSVG from "../Atoms/ReactSVG/LittleWorldsSVG";
 import textsLandingSection from "../Atoms/Texts/TextsLandingSection";
 import Parallax from "react-rellax";
+import LandingSateliteSVG from "../Atoms/ReactSVG/LandingSateliteSVG";
 const LandingSection = () => {
   return (
     <div className={styles.container}>
@@ -13,6 +14,9 @@ const LandingSection = () => {
           <ApearAnimation delayTime={1500} duration={2000}>
             <h1 className={styles.title}>Welcome to my universe</h1>
             <p className={styles.paragraphs}>{textsLandingSection}</p>
+            <div style={{margin:"0"}} onClick={()=>alert("hi")}>
+              <LandingSateliteSVG />
+            </div>
           </ApearAnimation>
         </Parallax>
         <Parallax speed={-1}>
