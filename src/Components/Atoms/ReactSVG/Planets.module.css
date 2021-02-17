@@ -1,0 +1,35 @@
+.mars {
+  width: 10vw;
+}
+
+.mars:hover {
+  animation: expandPlanet 2s forwards;
+}
+
+.mars:hover::before {
+  animation: contractPlanet 2s forwards;
+}
+
+.neptun {
+  width: 20vw;
+}
+
+.neptun:hover {
+  animation: expandPlanet 2s forwards;
+}
+
+.saturn {
+  width: 10vw;
+}
+
+.saturn:hover {
+  animation: expandPlanet 2s forwards;
+}
+
+
+
+@keyframes expandPlanet {
+    to {
+      transform: rotate(150deg);
+    }
+  }
