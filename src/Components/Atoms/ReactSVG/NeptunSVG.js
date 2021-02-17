@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./Planets.module.css";
 
-const NeptunSVG = () => {
+const NeptunSVG = ({ clicked, changeClicked }) => {
   return (
     <svg
-      className={styles.neptun}
+      onClick={changeClicked}
+      className={clicked ? styles.neptunClicked : styles.neptun}
       viewBox="0 0 57 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +18,7 @@ const NeptunSVG = () => {
           stroke="white"
           stroke-width="0.5"
         />
-        <g id="MecanicSatelite">
+        <g id="MecanicSatelite" className={styles.neptunSatelite}>
           <rect
             id="Rectangle 4"
             width="4.10887"

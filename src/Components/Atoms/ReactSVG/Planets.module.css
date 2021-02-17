@@ -10,10 +10,33 @@
 
 .neptun {
   width: 20vw;
+  animation: reverseRotatePlanet 2s forwards;
 }
 
-.neptun:hover {
+.neptunClicked {
+  width: 20vw;
   animation: rotatePlanet 2s forwards;
+}
+
+.neptunSatelite{
+  animation: moveNeptunSatelite 8s infinite alternate;
+}
+
+@keyframes moveNeptunSatelite {
+  to {
+   transform: rotate(20deg) translateX(10px) ;
+  }
+}
+
+.marsSatelite{
+  animation: moveMarsSatelite 5s infinite alternate;
+  fill: white;
+}
+
+@keyframes moveMarsSatelite {
+  to {
+   transform: rotate(75deg) translateX(5px) skew(40deg, 10deg) ;
+  }
 }
 
 .saturn {

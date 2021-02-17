@@ -14,7 +14,7 @@ const MarsSVG = ({ clicked, changeClicked }) => {
         <circle id="Ellipse 10" cx="25" cy="32" r="24.5" stroke="white" />
         <circle id="Ellipse 11" cx="36" cy="22" r="4.5" stroke="white" />
         <circle id="Ellipse 12" cx="29.5" cy="39.5" r="7" stroke="white" />
-        <circle id="Satelite" cx="38.5" cy="2.5" r="2" stroke="white" />
+        <circle id="Satelite" cx="38.5" cy="2.5" r="2" stroke="white" className={styles.marsSatelite} />
         <rect
           id="Rectangle 2"
           x="1"
