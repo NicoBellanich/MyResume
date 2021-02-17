@@ -18,33 +18,45 @@
   animation: rotatePlanet 2s forwards;
 }
 
-.neptunSatelite{
+.neptunSatelite {
   animation: moveNeptunSatelite 8s infinite alternate;
 }
 
 @keyframes moveNeptunSatelite {
   to {
-   transform: rotate(20deg) translateX(10px) ;
+    transform: rotate(20deg) translateX(10px);
   }
 }
 
-.marsSatelite{
+.marsSatelite {
   animation: moveMarsSatelite 5s infinite alternate;
   fill: white;
 }
 
 @keyframes moveMarsSatelite {
   to {
-   transform: rotate(75deg) translateX(5px) skew(40deg, 10deg) ;
+    transform: rotate(75deg) translateX(5px) skew(40deg, 10deg);
   }
 }
 
 .saturn {
   width: 10vw;
+  animation: reverseRotatePlanet 2s forwards;
 }
 
-.saturn:hover {
+.saturnClicked {
+  width: 10vw;
   animation: rotatePlanet 2s forwards;
+}
+
+.saturnPlate {
+  animation: moveSaturnPlate 2s infinite alternate;
+}
+
+@keyframes moveSaturnPlate {
+  to {
+    transform: rotate(10deg) translateX(1px);
+  }
 }
 
 @keyframes rotatePlanet {

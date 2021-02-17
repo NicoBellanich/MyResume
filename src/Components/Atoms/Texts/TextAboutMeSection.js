@@ -4,4 +4,6 @@ const marsText =
 const neptuneText =
   "Next I run into a begginners program of WeDevelop enterprice. Here I learn a lot about the latest technologyes. ReactJS, NodeJS, Apollo, GraphQL and also things like making mockups with Figma";
 
-export { marsText, neptuneText };
+const saturnText =
+  "Now Iam working with the coolest people I met in Bitlogic.io";
+export { marsText, neptuneText,saturnText };

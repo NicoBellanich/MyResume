@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./AboutMeSection.module.css";
-import SaturnSVG from "../Atoms/ReactSVG/SaturnSVG";
 import Mars from "../Molecules/Mars";
 import Neptun from "../Molecules/Neptun";
+import Saturn from "../Molecules/Saturn";
 import Parallax from "react-rellax";
 
 const AboutMeSection = () => {
@@ -19,7 +19,7 @@ const AboutMeSection = () => {
           <Neptun />
         </Parallax>
         <Parallax speed={-1}>
-          <SaturnSVG />
+          <Saturn />
         </Parallax>
       </div>
     </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./Planets.module.css";
 
-const SaturnSVG = () => {
+const SaturnSVG = ({ clicked, changeClicked }) => {
   return (
     <svg
-      className={styles.saturn}
+      onClick={changeClicked}
+      className={clicked ? styles.saturnClicked : styles.saturn}
       viewBox="0 0 58 55"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +19,7 @@ const SaturnSVG = () => {
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
+          className={styles.saturnPlate}
         />
         <path
           id="Vector 2"
