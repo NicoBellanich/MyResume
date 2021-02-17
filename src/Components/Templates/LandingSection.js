@@ -15,7 +15,7 @@ const LandingSection = () => {
             <p className={styles.paragraphs}>{textsLandingSection}</p>
           </ApearAnimation>
         </Parallax>
-        <Parallax speed={-5}>
+        <Parallax speed={-1}>
           <ApearAnimation delayTime={1500} duration={2000}>
             <LittleWorldsSVG />
           </ApearAnimation>
