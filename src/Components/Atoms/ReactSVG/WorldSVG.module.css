@@ -6,7 +6,7 @@
   fill: black;
   opacity: 0.95;
   /* animation: moveSatelite 1s infinite alternate; */
-  animation: moveSatelite 3s forwards;
+  animation: moveSatelite 8s infinite alternate;
 }
 
 @keyframes moveSatelite {

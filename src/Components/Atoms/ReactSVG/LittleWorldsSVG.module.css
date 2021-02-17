@@ -7,7 +7,7 @@
 .externalsatelite {
   fill: black;
   opacity: 0.5;
-  animation: moveSatelite 10s forwards;
+  animation: moveSatelite 10s infinite alternate;
 }
 
 .innerSatelite {
