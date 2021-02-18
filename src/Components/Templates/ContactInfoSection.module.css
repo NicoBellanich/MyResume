@@ -1,7 +1,22 @@
-.container{
-    margin-left: 20vw;
+.container {
+  margin-left: 20vw;
 }
 
-.title{
-    font-weight: 400;
+.title {
+  font-weight: 400px;
+  opacity: 0.82;
+}
+.icon {
+  padding: 0 2% 0 0;
+  margin: 0;
+}
+
+.rowContainer:hover {
+    transform: scale(2.3) translateX(10rem);
+    transition: 1.3s;
+}
+
+.link {
+  color: black;
+  margin-bottom: 40%;
 }

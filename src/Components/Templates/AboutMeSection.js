@@ -9,16 +9,16 @@ const AboutMeSection = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        Click a planet to know my work experience
+        Click any planet to know about my work experience
       </h1>
       <div className={styles.grid}>
         <Parallax speed={-1}>
           <Mars />
         </Parallax>
-        <Parallax speed={-1}>
+        <Parallax speed={-1.5}>
           <Neptun />
         </Parallax>
-        <Parallax speed={-1}>
+        <Parallax speed={-1.5}>
           <Saturn />
         </Parallax>
       </div>

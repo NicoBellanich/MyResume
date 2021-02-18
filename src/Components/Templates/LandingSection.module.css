@@ -26,8 +26,29 @@
   font-weight: 400;
   max-width: 50vw;
   opacity: 0.9;
+  animation: typewriter 4s steps(44) 2s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.paragraphs{
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90vw;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: red;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.paragraphs {
   opacity: 0.8;
 }

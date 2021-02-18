@@ -9,11 +9,22 @@
 }
 
 .neptun {
-  width: 20vw;
+  width: 15vw;
   animation: reverseRotatePlanet 2s forwards;
 }
 
 .neptunClicked {
+  width: 15vw;
+  animation: rotatePlanet 2s forwards;
+}
+
+
+.saturn {
+  width: 20vw;
+  animation: reverseRotatePlanet 2s forwards;
+}
+
+.saturnClicked {
   width: 20vw;
   animation: rotatePlanet 2s forwards;
 }
@@ -39,15 +50,6 @@
   }
 }
 
-.saturn {
-  width: 10vw;
-  animation: reverseRotatePlanet 2s forwards;
-}
-
-.saturnClicked {
-  width: 10vw;
-  animation: rotatePlanet 2s forwards;
-}
 
 .saturnPlate {
   animation: moveSaturnPlate 2s infinite alternate;
