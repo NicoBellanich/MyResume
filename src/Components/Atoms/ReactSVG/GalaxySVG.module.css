@@ -1,0 +1,14 @@
+.galaxy {
+  width: 30vw;
+}
+
+.planet1 {
+  animation: movePlanet 5s infinite alternate;
+}
+
+
+@keyframes movePlanet {
+  to {
+    transform: translateX(10px);
+  }
+}
